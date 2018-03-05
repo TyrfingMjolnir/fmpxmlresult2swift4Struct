@@ -4,11 +4,11 @@ FileMaker FMPXMLRESULT to Swift 4 Struct
 
 FMPXMLRESULT  | Swift4        |
  ------------ | :-----------: |
-TEXT          |     String    |
-DATE          |     Date      |
-TIMESTAMP     |     Date      |
-TIME          |     Date      |
-NUMBER        |     Float     |
+TEXT          | String    |
+DATE          | Date      |
+TIMESTAMP     | Date      |
+TIME          | Date      |
+NUMBER        | Float     |
 
 FileMake TEXT maps to Swift4 String
 CONTAINER to String
