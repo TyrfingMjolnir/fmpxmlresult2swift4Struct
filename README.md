@@ -9,3 +9,5 @@ DATE          | Date |
 TIMESTAMP     | Date |
 TIME          | Date |
 NUMBER        | Float; yet in several cases mapping this to Int would be less insane, though I'd love to have Postgres' Numeric for this.|
+
+Please consult onr of my other FMPXMLRESULT code generators to get inspired https://github.com/TyrfingMjolnir/fmpxmlresult2nodeexpress
