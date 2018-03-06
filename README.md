@@ -35,8 +35,10 @@ Note that adding a layout name in the FMPXMLRESULT export; before translating us
 
 How to use this file in terminal
 ---
+```
 xsltproc fmpxmlresult2swift4Struct.xslt YourTable.fmpxmlresult.xml > YourTablesStruct.snippet.swift
 xsltproc fmpxmlresult2swift4Enum.xslt YourTable.fmpxmlresult.xml > YourTablesEnum.snippet.swift
+```
 
 License
 =======
