@@ -12,6 +12,7 @@ NUMBER        | Float; yet in several cases mapping this to Int would be less
 
 Sample output:
 ```swift
+$ xsltproc fmpxmlresult2swift4Struct.xslt YourTable.fmpxmlresult.xml
 struct Tablename {
   let itemID: Float
   let itemUUID: String
@@ -21,6 +22,7 @@ struct Tablename {
 ```
 
 ```swift
+$ xsltproc fmpxmlresult2swift4Enum.xslt YourTable.fmpxmlresult.xml
 enum Tablename {
   case itemID( Float )
   case itemUUID( String )
