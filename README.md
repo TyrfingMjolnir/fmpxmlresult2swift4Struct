@@ -29,6 +29,22 @@ enum Tablename {
   case itemName( String )
   case itemDescription( String )
 }
+
+var TablenameitemID = Tablename.itemID("test")
+var TablenameitemUUID = Tablename.itemUUID("test")
+var TablenameitemName = Tablename.itemName("test")
+var TablenameitemDescription = Tablename.itemDescription("test")
+
+switch Tablename {
+  case .itemID
+    print("Output: \(itemID)")
+  case .itemUUID
+    print("Output: \(itemUUID)")
+  case .itemName
+    print("Output: \(itemName)")
+  case .itemDescription
+    print("Output: \(itemDescription)")
+}
 ```
 
 
