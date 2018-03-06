@@ -21,4 +21,4 @@ struct Tablename {
   let itemDescription: String
 }
 ```
-One would typically change Float to Int; and make a separate UUID type for this case.
+One would typically change Float to Int; and make a separate UUID datatype based on string for this use case.
