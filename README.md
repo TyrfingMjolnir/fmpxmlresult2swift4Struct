@@ -10,8 +10,6 @@ TIMESTAMP     | Date |
 TIME          | Date |
 NUMBER        | Float; yet in several cases mapping this to Int would be less insane, though I'd love to have Postgres' Numeric for this.|
 
-Please consult one of my other "FMPXMLRESULT code generators" to get inspired https://github.com/TyrfingMjolnir/fmpxmlresult2nodeexpress
-
 Sample output:
 ```swift
 struct Tablename {
@@ -21,6 +19,17 @@ struct Tablename {
   let itemDescription: String
 }
 ```
+
+```swift
+enum Tablename {
+  case itemID( Float )
+  case itemUUID( String )
+  case itemName( String )
+  case itemDescription( String )
+}
+```
+
+
 One would typically change Float to Int; and make a separate UUID datatype based on string for this use case.
 
 This is an XSLT stylesheet to convert from FileMaker's fmpxmlresult to Swift 4's Enum and Struct for Cocoa[Touch] development saves me some typing, no records involved. This has no use if you prefer to retype stuff.
