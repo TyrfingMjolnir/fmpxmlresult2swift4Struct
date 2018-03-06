@@ -12,6 +12,7 @@ NUMBER        | Float; yet in several cases mapping this to Int would be less
 
 Please consult one of my other "FMPXMLRESULT code generators" to get inspired https://github.com/TyrfingMjolnir/fmpxmlresult2nodeexpress
 
+Sample output:
 ```swift
 struct Tablename {
   let itemID: Float
