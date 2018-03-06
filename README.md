@@ -21,4 +21,4 @@ struct Tablename {
   let itemDescription: String
 }
 ```
-One would typicly change Float to Int for this case.
+One would typically change Float to Int for this case.
