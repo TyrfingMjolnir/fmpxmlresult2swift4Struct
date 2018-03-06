@@ -24,7 +24,58 @@
 		<xsl:text>}
 
 </xsl:text>
-  </xsl:template>
+		<xsl:call-template name="makesamplevars"/>
+		<xsl:text>
+</xsl:text>
+		<xsl:call-template name="doswitchcase"/>
+	</xsl:template>
+		
+	
+	<xsl:template name="makesamplevars">
+		<xsl:for-each select="fmp:METADATA/fmp:FIELD">
+			<xsl:text>var </xsl:text>
+			<xsl:value-of select="$tableName"/>
+			<xsl:value-of select="@NAME"/>
+			<xsl:text> = </xsl:text>
+			<xsl:value-of select="$tableName"/>
+			<xsl:text>.</xsl:text>
+			<xsl:value-of select="@NAME"/>
+			<xsl:text>("test")
+</xsl:text>
+			</xsl:for-each>
+		</xsl:template>	
+	
+	
+	<xsl:template name="doswitchcase">
+		<xsl:text>switch </xsl:text><xsl:value-of select="$tableName"/><xsl:text> {
+</xsl:text>			
+				<xsl:for-each select="fmp:METADATA/fmp:FIELD">
+			<xsl:text>  case .</xsl:text><xsl:value-of select="@NAME"/><xsl:text>
+    print("Output: \(</xsl:text><xsl:value-of select="@NAME"/><xsl:text>)")</xsl:text>
+                  <xsl:text>
+</xsl:text>
+				</xsl:for-each>
+		<xsl:text>}
+
+</xsl:text>
+	</xsl:template>
+	
+	
+	
+	<!--
+var studDetails = Student.Name("Swift 4")
+var studMarks = Student.Mark(98,97,95)
+
+switch studMarks {
+   case .Name(let studName):
+      print("Student name is: \(studName).")
+   case .Mark(let Mark1, let Mark2, let Mark3):
+      print("Student Marks are: \(Mark1),\(Mark2),\(Mark3).")
+}
+	
+	-->
+	
+	
 	<xsl:variable name="databaseName">
 		<xsl:value-of select="fmp:FMPXMLRESULT/fmp:DATABASE/@NAME"/>
 	</xsl:variable>
