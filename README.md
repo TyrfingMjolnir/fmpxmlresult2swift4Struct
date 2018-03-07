@@ -62,8 +62,10 @@ Note that adding a layout name in the FMPXMLRESULT export; before translating us
 
 How to use this file in terminal
 ---
-```
+```bash
 xsltproc fmpxmlresult2swift4Struct.xslt YourTable.fmpxmlresult.xml > YourTablesStruct.snippet.swift
+```
+```bash
 xsltproc fmpxmlresult2swift4Enum.xslt YourTable.fmpxmlresult.xml > YourTablesEnum.snippet.swift
 ```
 
