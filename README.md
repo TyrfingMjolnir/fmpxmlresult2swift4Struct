@@ -10,7 +10,7 @@ TIMESTAMP     | Date |
 TIME          | Date |
 NUMBER        | Float; yet in several cases mapping this to Int would be less insane, though I'd love to have Postgres' Numeric for this.|
 
-Sample output done in shell on a Mac; you might as well make a FileMaker XML export script if you need to do this frequently:
+Sample output done in shell on a Mac; you might as well make a FileMaker XML export script if you need to do this frequently( FileMaker 5.5 and up ):
 ```swift
 $ xsltproc fmpxmlresult2swift4Struct.xslt YourTable.fmpxmlresult.xml
 struct Tablename {
