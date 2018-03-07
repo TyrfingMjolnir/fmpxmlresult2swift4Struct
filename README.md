@@ -1,4 +1,4 @@
-# FMPXMLRESULT2swift4Struct
+# Stylesheet for converting or exporting FileMaker's FMPXMLRESULT to struct and enum in Swift 4
 FileMaker FMPXMLRESULT to Swift 4 Struct
 
 
