@@ -11,8 +11,10 @@ TIME          | Date |
 NUMBER        | Float; yet in several cases mapping this to Int would be less insane, though I'd love to have Postgres' Numeric for this.|
 
 Sample output done in shell on a Mac; you might as well make a FileMaker( FileMaker 5 and up ) XML export script if you need to do this frequently:
-```swift
+```bash
 $ xsltproc fmpxmlresult2swift4Struct.xslt YourTable.fmpxmlresult.xml
+```
+```swift
 struct Tablename {
   let itemID: Float
   let itemUUID: String
@@ -21,8 +23,10 @@ struct Tablename {
 }
 ```
 
-```swift
+```bash
 $ xsltproc fmpxmlresult2swift4Enum.xslt YourTable.fmpxmlresult.xml
+```
+```swift
 enum Tablename {
   case itemID( Float )
   case itemUUID( String )
