@@ -2,7 +2,7 @@
 FileMaker FMPXMLRESULT to Swift 4 Struct
 
 
-FMPXMLRESULT  | Swift 4 |
+FMPXMLRESULT/METADATA/FIELD  | Swift 4 |
  ------------ | ----------- |
 TEXT          | String |
 DATE          | Date |
