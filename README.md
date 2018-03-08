@@ -6,7 +6,7 @@ FileMaker FMPXMLRESULT to Swift 4 Struct
  ------------ | ----------- |
 TEXT          | String |
 DATE          | Date |
-TIMESTAMP     | Date |
+TIMESTAMP     | Date; ideally there should be some sort of Postgres' timestamptz implementation for this |
 TIME          | Date |
 NUMBER        | Float; yet in several cases mapping this to Int would be less insane, though I'd love to have Postgres' Numeric for this.|
 
